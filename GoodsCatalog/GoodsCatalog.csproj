@@ -127,8 +127,13 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+<<<<<<< HEAD
+    <EmbeddedResource Include="RegisterWindow.resx">
+      <DependentUpon>RegisterWindow.cs</DependentUpon>
+=======
     <EmbeddedResource Include="UsersEditor.resx">
       <DependentUpon>UsersEditor.cs</DependentUpon>
+>>>>>>> 9f79192d39a42e667e0211ad1e15bbdaaafab511
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
