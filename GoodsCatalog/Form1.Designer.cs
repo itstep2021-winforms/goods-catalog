@@ -48,6 +48,10 @@
             this.authorItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ordersItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ordersManageItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.additionalItemsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.item1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.item2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.item3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -73,10 +77,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.nameField = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.additionalItemsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.item1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.item2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.item3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -97,7 +97,7 @@
             this.additionalItemsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(830, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(830, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -106,13 +106,13 @@
             this.programToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exitItem});
             this.programToolStripMenuItem.Name = "programToolStripMenuItem";
-            this.programToolStripMenuItem.Size = new System.Drawing.Size(78, 24);
+            this.programToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.programToolStripMenuItem.Text = "&Program";
             // 
             // exitItem
             // 
             this.exitItem.Name = "exitItem";
-            this.exitItem.Size = new System.Drawing.Size(108, 26);
+            this.exitItem.Size = new System.Drawing.Size(93, 22);
             this.exitItem.Text = "&Exit";
             // 
             // categoriesToolStripMenuItem
@@ -122,26 +122,29 @@
             this.updateCategoryItem,
             this.deleteCategoryItem});
             this.categoriesToolStripMenuItem.Name = "categoriesToolStripMenuItem";
-            this.categoriesToolStripMenuItem.Size = new System.Drawing.Size(92, 24);
+            this.categoriesToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
             this.categoriesToolStripMenuItem.Text = "&Categories";
             // 
             // createCategoryItem
             // 
             this.createCategoryItem.Name = "createCategoryItem";
-            this.createCategoryItem.Size = new System.Drawing.Size(193, 26);
+            this.createCategoryItem.Size = new System.Drawing.Size(180, 22);
             this.createCategoryItem.Text = "&CreateCategory";
+            this.createCategoryItem.Click += new System.EventHandler(this.createCategoryItem_Click);
             // 
             // updateCategoryItem
             // 
             this.updateCategoryItem.Name = "updateCategoryItem";
-            this.updateCategoryItem.Size = new System.Drawing.Size(193, 26);
+            this.updateCategoryItem.Size = new System.Drawing.Size(180, 22);
             this.updateCategoryItem.Text = "&UpdateCategory";
+            this.updateCategoryItem.Click += new System.EventHandler(this.updateCategoryItem_Click);
             // 
             // deleteCategoryItem
             // 
             this.deleteCategoryItem.Name = "deleteCategoryItem";
-            this.deleteCategoryItem.Size = new System.Drawing.Size(193, 26);
+            this.deleteCategoryItem.Size = new System.Drawing.Size(180, 22);
             this.deleteCategoryItem.Text = "&DeleteCategory";
+            this.deleteCategoryItem.Click += new System.EventHandler(this.deleteCategoryItem_Click);
             // 
             // producersToolStripMenuItem
             // 
@@ -150,25 +153,25 @@
             this.updateProducerItem,
             this.deleteProducerItem});
             this.producersToolStripMenuItem.Name = "producersToolStripMenuItem";
-            this.producersToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
+            this.producersToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
             this.producersToolStripMenuItem.Text = "&Producers";
             // 
             // createProducerItem
             // 
             this.createProducerItem.Name = "createProducerItem";
-            this.createProducerItem.Size = new System.Drawing.Size(192, 26);
+            this.createProducerItem.Size = new System.Drawing.Size(160, 22);
             this.createProducerItem.Text = "&CreateProducer";
             // 
             // updateProducerItem
             // 
             this.updateProducerItem.Name = "updateProducerItem";
-            this.updateProducerItem.Size = new System.Drawing.Size(192, 26);
+            this.updateProducerItem.Size = new System.Drawing.Size(160, 22);
             this.updateProducerItem.Text = "&UpdateProducer";
             // 
             // deleteProducerItem
             // 
             this.deleteProducerItem.Name = "deleteProducerItem";
-            this.deleteProducerItem.Size = new System.Drawing.Size(192, 26);
+            this.deleteProducerItem.Size = new System.Drawing.Size(160, 22);
             this.deleteProducerItem.Text = "&DeleteProducer";
             // 
             // productsToolStripMenuItem
@@ -178,25 +181,25 @@
             this.updateProductItem,
             this.deleteProductItem});
             this.productsToolStripMenuItem.Name = "productsToolStripMenuItem";
-            this.productsToolStripMenuItem.Size = new System.Drawing.Size(78, 24);
+            this.productsToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.productsToolStripMenuItem.Text = "&Products";
             // 
             // createProductItem
             // 
             this.createProductItem.Name = "createProductItem";
-            this.createProductItem.Size = new System.Drawing.Size(184, 26);
+            this.createProductItem.Size = new System.Drawing.Size(154, 22);
             this.createProductItem.Text = "&CreateProduct";
             // 
             // updateProductItem
             // 
             this.updateProductItem.Name = "updateProductItem";
-            this.updateProductItem.Size = new System.Drawing.Size(184, 26);
+            this.updateProductItem.Size = new System.Drawing.Size(154, 22);
             this.updateProductItem.Text = "&UpdateProduct";
             // 
             // deleteProductItem
             // 
             this.deleteProductItem.Name = "deleteProductItem";
-            this.deleteProductItem.Size = new System.Drawing.Size(184, 26);
+            this.deleteProductItem.Size = new System.Drawing.Size(154, 22);
             this.deleteProductItem.Text = "&DeleteProduct";
             // 
             // aboutToolStripMenuItem
@@ -204,13 +207,13 @@
             this.aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.authorItem});
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.aboutToolStripMenuItem.Text = "&About";
             // 
             // authorItem
             // 
             this.authorItem.Name = "authorItem";
-            this.authorItem.Size = new System.Drawing.Size(129, 26);
+            this.authorItem.Size = new System.Drawing.Size(111, 22);
             this.authorItem.Text = "&Author";
             // 
             // ordersItem
@@ -218,14 +221,42 @@
             this.ordersItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ordersManageItem});
             this.ordersItem.Name = "ordersItem";
-            this.ordersItem.Size = new System.Drawing.Size(65, 24);
+            this.ordersItem.Size = new System.Drawing.Size(54, 20);
             this.ordersItem.Text = "&Orders";
             // 
             // ordersManageItem
             // 
             this.ordersManageItem.Name = "ordersManageItem";
-            this.ordersManageItem.Size = new System.Drawing.Size(138, 26);
+            this.ordersManageItem.Size = new System.Drawing.Size(117, 22);
             this.ordersManageItem.Text = "&Manage";
+            // 
+            // additionalItemsToolStripMenuItem
+            // 
+            this.additionalItemsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.item1ToolStripMenuItem,
+            this.item2ToolStripMenuItem,
+            this.item3ToolStripMenuItem});
+            this.additionalItemsToolStripMenuItem.Name = "additionalItemsToolStripMenuItem";
+            this.additionalItemsToolStripMenuItem.Size = new System.Drawing.Size(103, 20);
+            this.additionalItemsToolStripMenuItem.Text = "AdditionalItems";
+            // 
+            // item1ToolStripMenuItem
+            // 
+            this.item1ToolStripMenuItem.Name = "item1ToolStripMenuItem";
+            this.item1ToolStripMenuItem.Size = new System.Drawing.Size(104, 22);
+            this.item1ToolStripMenuItem.Text = "Item1";
+            // 
+            // item2ToolStripMenuItem
+            // 
+            this.item2ToolStripMenuItem.Name = "item2ToolStripMenuItem";
+            this.item2ToolStripMenuItem.Size = new System.Drawing.Size(104, 22);
+            this.item2ToolStripMenuItem.Text = "Item2";
+            // 
+            // item3ToolStripMenuItem
+            // 
+            this.item3ToolStripMenuItem.Name = "item3ToolStripMenuItem";
+            this.item3ToolStripMenuItem.Size = new System.Drawing.Size(104, 22);
+            this.item3ToolStripMenuItem.Text = "Item3";
             // 
             // pictureBox1
             // 
@@ -244,7 +275,7 @@
             this.label1.ForeColor = System.Drawing.Color.DarkCyan;
             this.label1.Location = new System.Drawing.Point(237, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(511, 29);
+            this.label1.Size = new System.Drawing.Size(395, 24);
             this.label1.TabIndex = 2;
             this.label1.Text = "Автоматизированная система управления";
             // 
@@ -255,7 +286,7 @@
             this.label2.ForeColor = System.Drawing.Color.DarkCyan;
             this.label2.Location = new System.Drawing.Point(255, 79);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(470, 29);
+            this.label2.Size = new System.Drawing.Size(364, 24);
             this.label2.TabIndex = 3;
             this.label2.Text = "каталогом товаров интернет-магазина";
             // 
@@ -289,7 +320,7 @@
             this.producersList.FormattingEnabled = true;
             this.producersList.Location = new System.Drawing.Point(449, 32);
             this.producersList.Name = "producersList";
-            this.producersList.Size = new System.Drawing.Size(168, 26);
+            this.producersList.Size = new System.Drawing.Size(168, 23);
             this.producersList.TabIndex = 3;
             // 
             // label4
@@ -299,7 +330,7 @@
             this.label4.ForeColor = System.Drawing.Color.Navy;
             this.label4.Location = new System.Drawing.Point(295, 34);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(148, 20);
+            this.label4.Size = new System.Drawing.Size(114, 17);
             this.label4.TabIndex = 2;
             this.label4.Text = "Производитель:";
             // 
@@ -309,7 +340,7 @@
             this.categoriesList.FormattingEnabled = true;
             this.categoriesList.Location = new System.Drawing.Point(115, 32);
             this.categoriesList.Name = "categoriesList";
-            this.categoriesList.Size = new System.Drawing.Size(168, 26);
+            this.categoriesList.Size = new System.Drawing.Size(168, 23);
             this.categoriesList.TabIndex = 1;
             // 
             // label3
@@ -319,7 +350,7 @@
             this.label3.ForeColor = System.Drawing.Color.Navy;
             this.label3.Location = new System.Drawing.Point(6, 34);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(103, 20);
+            this.label3.Size = new System.Drawing.Size(81, 17);
             this.label3.TabIndex = 0;
             this.label3.Text = "Категория:";
             // 
@@ -343,9 +374,11 @@
             this.columnHeader5,
             this.columnHeader6});
             this.productsList.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.productsList.Location = new System.Drawing.Point(3, 20);
+            this.productsList.FullRowSelect = true;
+            this.productsList.HideSelection = false;
+            this.productsList.Location = new System.Drawing.Point(3, 17);
             this.productsList.Name = "productsList";
-            this.productsList.Size = new System.Drawing.Size(755, 247);
+            this.productsList.Size = new System.Drawing.Size(755, 250);
             this.productsList.TabIndex = 0;
             this.productsList.UseCompatibleStateImageBehavior = false;
             this.productsList.View = System.Windows.Forms.View.Details;
@@ -353,17 +386,17 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "Наименование";
-            this.columnHeader1.Width = 199;
+            this.columnHeader1.Width = 202;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "Цена";
-            this.columnHeader2.Width = 79;
+            this.columnHeader2.Width = 88;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "Количество";
-            this.columnHeader3.Width = 103;
+            this.columnHeader3.Width = 95;
             // 
             // columnHeader4
             // 
@@ -373,7 +406,7 @@
             // columnHeader5
             // 
             this.columnHeader5.Text = "Срок хранения";
-            this.columnHeader5.Width = 139;
+            this.columnHeader5.Width = 168;
             // 
             // columnHeader6
             // 
@@ -410,7 +443,7 @@
             // 
             this.countField.Location = new System.Drawing.Point(394, 54);
             this.countField.Name = "countField";
-            this.countField.Size = new System.Drawing.Size(140, 24);
+            this.countField.Size = new System.Drawing.Size(140, 21);
             this.countField.TabIndex = 5;
             // 
             // label7
@@ -420,7 +453,7 @@
             this.label7.ForeColor = System.Drawing.Color.Purple;
             this.label7.Location = new System.Drawing.Point(398, 31);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(114, 20);
+            this.label7.Size = new System.Drawing.Size(90, 17);
             this.label7.TabIndex = 4;
             this.label7.Text = "Количество:";
             // 
@@ -428,7 +461,7 @@
             // 
             this.priceField.Location = new System.Drawing.Point(234, 54);
             this.priceField.Name = "priceField";
-            this.priceField.Size = new System.Drawing.Size(140, 24);
+            this.priceField.Size = new System.Drawing.Size(140, 21);
             this.priceField.TabIndex = 3;
             // 
             // label6
@@ -438,7 +471,7 @@
             this.label6.ForeColor = System.Drawing.Color.Purple;
             this.label6.Location = new System.Drawing.Point(235, 31);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(57, 20);
+            this.label6.Size = new System.Drawing.Size(47, 17);
             this.label6.TabIndex = 2;
             this.label6.Text = "Цена:";
             // 
@@ -446,7 +479,7 @@
             // 
             this.nameField.Location = new System.Drawing.Point(10, 54);
             this.nameField.Name = "nameField";
-            this.nameField.Size = new System.Drawing.Size(204, 24);
+            this.nameField.Size = new System.Drawing.Size(204, 21);
             this.nameField.TabIndex = 1;
             // 
             // label5
@@ -456,41 +489,13 @@
             this.label5.ForeColor = System.Drawing.Color.Purple;
             this.label5.Location = new System.Drawing.Point(11, 31);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(139, 20);
+            this.label5.Size = new System.Drawing.Size(110, 17);
             this.label5.TabIndex = 0;
             this.label5.Text = "Наименование:";
             // 
-            // additionalItemsToolStripMenuItem
-            // 
-            this.additionalItemsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.item1ToolStripMenuItem,
-            this.item2ToolStripMenuItem,
-            this.item3ToolStripMenuItem});
-            this.additionalItemsToolStripMenuItem.Name = "additionalItemsToolStripMenuItem";
-            this.additionalItemsToolStripMenuItem.Size = new System.Drawing.Size(127, 24);
-            this.additionalItemsToolStripMenuItem.Text = "AdditionalItems";
-            // 
-            // item1ToolStripMenuItem
-            // 
-            this.item1ToolStripMenuItem.Name = "item1ToolStripMenuItem";
-            this.item1ToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.item1ToolStripMenuItem.Text = "Item1";
-            // 
-            // item2ToolStripMenuItem
-            // 
-            this.item2ToolStripMenuItem.Name = "item2ToolStripMenuItem";
-            this.item2ToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.item2ToolStripMenuItem.Text = "Item2";
-            // 
-            // item3ToolStripMenuItem
-            // 
-            this.item3ToolStripMenuItem.Name = "item3ToolStripMenuItem";
-            this.item3ToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.item3ToolStripMenuItem.Text = "Item3";
-            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(830, 622);
             this.Controls.Add(this.groupBox3);
@@ -508,6 +513,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Каталог товаров - Главное окно";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

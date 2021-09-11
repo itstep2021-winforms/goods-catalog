@@ -49,6 +49,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -79,6 +80,9 @@
     <Compile Include="LoginWindow.Designer.cs">
       <DependentUpon>LoginWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\Producer.cs" />
+    <Compile Include="Models\Product.cs" />
     <Compile Include="OrdersEditor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,8 +115,14 @@
     <Compile Include="UsersEditor.Designer.cs">
       <DependentUpon>UsersEditor.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CategoriesEditor.resx">
+      <DependentUpon>CategoriesEditor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginWindow.resx">
+      <DependentUpon>LoginWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProductsEditor.resx">
       <DependentUpon>ProductsEditor.cs</DependentUpon>
@@ -127,13 +137,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-<<<<<<< HEAD
     <EmbeddedResource Include="RegisterWindow.resx">
       <DependentUpon>RegisterWindow.cs</DependentUpon>
-=======
+    </EmbeddedResource>
     <EmbeddedResource Include="UsersEditor.resx">
       <DependentUpon>UsersEditor.cs</DependentUpon>
->>>>>>> 9f79192d39a42e667e0211ad1e15bbdaaafab511
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
