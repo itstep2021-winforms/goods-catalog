@@ -80,7 +80,6 @@ namespace GoodsCatalog
                         connection.Close();
                     this.Close();
                 }
-
             }
         }
 
@@ -206,7 +205,6 @@ namespace GoodsCatalog
                 if (connection.State == ConnectionState.Open)
                     connection.Close();
             }
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
